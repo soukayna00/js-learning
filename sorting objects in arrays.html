@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+<p>Sort car objects on age:</p>
+
+<p id="demo"></p>
+
+<script>
+const student= [
+{name: "soukayna", year:2000},
+{name: "mohamed",  year:2015},
+{name: "anas",  year:2014}
+];
+
+display();
+
+student.sort(function (a,b){ return a.year-b.year});
+display();
+
+function display(){
+document.getElementById("demo").innerHTML=
+student[0].name+" "+student[0].year +"<br>"+
+student[1].name+" "+student[1].year +"<br>"+
+student[2].name+" "+student[2].year;
+}
+
+</script>
+
+</body>
+</html>
