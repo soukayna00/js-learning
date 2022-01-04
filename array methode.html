@@ -1,0 +1,35 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+  <!--The pop() method removes the last element from an array-->
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
+
+  <script>
+  const cars=["volvo","mercedes","fiat","ford"];
+  document.getElementById("demo1").innerHTML=cars;
+  cars.pop();
+  document.getElementById("demo2").innerHTML=cars;
+  // The push() method adds an element to the last in an array-->
+  cars.push("hyundai");
+  document.getElementById("demo3").innerHTML=cars
+  //The shift() method removes the first element of an array (and "shifts" the other elements to the left):
+  cars.shift()
+  document.getElementById("demo4").innerHTML=cars
+  //The shift() method returns the value that was "shifted out":
+  document.getElementById("demo5").innerHTML=cars.shift();
+  </script>
+  
+  </body>
+  </html>
+  </body>
+  </html>
