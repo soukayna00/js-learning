@@ -1,54 +1,44 @@
-//declaration des variables a= position1 b= position2 astring=num1 bsting=num2
-//afficher=var de imput
-var a ,b ,aString ,bString ,operation ;
-// fonction pour clicker sur les numeros
-function oncklikNumbre(number){
+var a,b,aString,bString,operation,afficher
+//function pour clicker sur les numero
+function onclickNumbre(number){
 
-  if (aString==undefined){aString=number}
-  else(bString=number)
+  if(aString=undefined){aString=number}
+  else
+  (bString=number)
   afficher()
 }
+function afficher()
+let afficher=document.getElementById('afficher')
+if(a!=undefined && b!=undefined && operation!=undefined)
+{afficher.value=''}
+else{
+  if(aString!=undefined){aString+=afficher.value}
+  if(bString!=undefined){bString +=afficher.value}
+  if(operation!=undefined){operation+=afficher.value}
+}
 
-
-//fonction pour faire afficher les numeros
-function afficher(number) {
-
-  var afficher = document.getElementById("afficher")
-  afficher.value = ""
-
-  if ( a != undefined && b != undefined && operation != undefined )
-  {afficher.value = number }
-  else{
-      if(aString != undefined){afficher.value += aString}
-      if ( operation != undefined){afficher.value += operation}
-      if(bString != undefined){afficher.value += bString}
-
-  }
-// affectation operation avec son parametre
-function operation(operationParam){
-  if(operation==undefined){operation=operationParam}
+//function operation pour affecter les operations
+function Operation(operationparam){
+  if(operation==undefined){operation=operationparam}
   afficher()
 }
-// function egale
-// pour maintenir les positions des premier num et deuxieme num
-function egale() {
-
-  a= parseFloat(aString)
-  b= parseFloat(bString)
-
-   resulta = calcul (a,b,operation )
-   afficher (resulta)  
+//function egale pour que chaque num prend sa place
+function egale(){
+a=parseFloat(aString)
+b=parseFloat(bString)
+resultat=calcul(operation,a,b)
+afficher(resultat)
 }
-function calcul (a,b,operation) {
-  resulta = undefined 
+//function calcul 
+function calcul(a,b,operation){
+  resultat=undefined
+  switch(operation){
+    case "+":
+     resultat=a+b
+     break;
 
-  switch (operation ) {
-      case "+":
-          resulta= a+b
-          break;
-  
-      default:
-          break;
+     default:
+     break;
+
   }
-  return resulta
 }
