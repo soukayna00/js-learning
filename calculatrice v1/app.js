@@ -1,4 +1,5 @@
-var a,b,aString,bString,operation,afficher
+var a,b,aString,bString,operation
+
 //function pour clicker sur les numero
 function onclickNumbre(number){
 
@@ -8,18 +9,23 @@ function onclickNumbre(number){
   afficher()
 }
 function afficher()
-let afficher=document.getElementById('afficher')
+  var afficher=document.getElementById('afficher')
+  afficher.value=''
+
 if(a!=undefined && b!=undefined && operation!=undefined)
-{afficher.value=''}
+{afficher.value=number}
+
 else{
-  if(aString!=undefined){aString+=afficher.value}
-  if(bString!=undefined){bString +=afficher.value}
-  if(operation!=undefined){operation+=afficher.value}
+  if(aString!=undefined){afficher.value+=aString}
+  if(bString!=undefined){afficher.value+=bString}
+  if(operation!=undefined){afficher.value+=operation}
 }
 
 //function operation pour affecter les operations
 function Operation(operationparam){
+
   if(operation==undefined){operation=operationparam}
+
   afficher()
 }
 //function egale pour que chaque num prend sa place
@@ -41,4 +47,5 @@ function calcul(a,b,operation){
      break;
 
   }
+  return resultat
 }
