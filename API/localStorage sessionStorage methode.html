@@ -1,0 +1,26 @@
+<!-- The setItem() Method -->
+<!-- The localStorage.setItem() method stores a data item in a storage.
+
+It takes a name and a value as parameters: -->
+<!-- localStorage.setItem("name", "John Doe");
+localStorage.getItem("name"); -->
+<!-- The sessionStorage object is identical to the localStorage object.
+
+The difference is that the sessionStorage object stores data for one session.
+
+The data is deleted when the browser is closed. -->
+<!-- sessionStorage.getItem("name");
+expl -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+sessionStorage.setItem("name","John Doe");
+document.getElementById("demo").innerHTML = sessionStorage.getItem("name");
+</script>
+
+</body>
+</html>
