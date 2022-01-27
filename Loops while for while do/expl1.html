@@ -1,0 +1,30 @@
+<!-- for(initialisation,condition,incrementation/decrementation) -->
+<!-- for(i=1 ;i<=10;i++)
+document.write(i) -->
+<!-- 
+for, while ,do while  -->
+
+ex1 afficher les nombres paires entre 1 et 1000 
+ex2 afficher la table de multiplication de x et saisit dans une input 
+
+
+ex1
+for(i=2,i<=1000,i++2)
+document.write(i)
+(ici nbr de repetition est de 500)
+
+for(let i=1,i<=1000,i++1)
+if(i%2==0 )
+{document.write(i)}
+(ici nbr de repetition est de 1000)
+
+ex2
+<!-- pour saisir la valeur si on ajoute pas .value elle saisit tout  l element et on pourra meme changer
+ le style-->
+let x=document.getelementbyid("input").value 
+<!-- document. write refreche la page pas pratique on utilise un div vide dans html-->
+let dv=document.getelementsbytagname('div')[0]
+}
+for( let i=1,i<=10,i++){
+ dv.innerhtml += x +'*'+i+"="(x*i)+'<br>'
+ <!-- on ajoute le += pour garder les calcul precedent  -->
