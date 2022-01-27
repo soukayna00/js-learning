@@ -1,0 +1,33 @@
+<!-- exercice
+
+2 fonction : celisius to fahrenheit()
+            farenheit to celisius() -->
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+            </head>
+            <body>
+              <input id='userInput'type="text">
+              <button onclick="CelisiusToFahrenheit()">fahrenheit</button>
+              <button onclick="FahrenhetToCelisisus()">celisius</button>
+              <div> </div>
+            </body>
+            <script>
+              function CelisiusToFahrenheit(){
+                let userInput=document.getElementById("userInput").value
+                return (userInput*9/5)+32
+              
+                
+              }
+              function FahrenhetToCelisisus(){
+                let userInput=document.getElementById("userInput").value
+                return (userInput-32)*5/9
+                
+              }
+            </script>
+            </html>

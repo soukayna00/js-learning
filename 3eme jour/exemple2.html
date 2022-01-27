@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+  
+  <script>
+    class employee{
+      constructor(nomComplet,anneeEmbauche,salaire){
+        this.nomComplet=nomComplet;
+        this.anneeEmbauche=anneeEmbauche;
+        this.salaire=salaire;
+      }
+      ancienté(){
+         return 2022-this.anneeEmbauche;
+      }
+      augmentationSalaire(taux){
+         this.salaire+=(this.salaire*taux/100);
+      }
+      afficheremploye(){
+        return `Nom Complet=${this.nom}.anneeEmbauche=${anneeEmbauche}.ancienté=${ancienté()}`
+      }
+    }
+    var emp1=new employee('amine salmi',2012,4000)
+  </script>
+</body>
+</html>
