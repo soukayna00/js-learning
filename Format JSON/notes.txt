@@ -1,0 +1,27 @@
+JSON
+stands for js object Notation
+a leightwaight data interchangeable format
+used to send data between computers notation
+json is independant of language
+the format is text only
+
+
+JavaScript has a built in function for converting JSON strings into JavaScript objects:
+
+JSON.parse()
+
+
+JavaScript also has a built in function for converting an object into a JSON string:
+
+JSON.stringify()
+
+
+json values can be a string,a bolean,a number ,an object ,array
+but not afunction ; undefined or a date
+
+In JSON, string values must be written with double quotes:
+
+
+Both JSON and XML can be used to receive data from a web server.
+
+
